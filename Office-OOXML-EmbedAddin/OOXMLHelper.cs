@@ -52,9 +52,9 @@ namespace Office_OOXML_EmbedAddin
         // Generates content of webExtensionPart1.
         private static void GenerateWebExtensionPart1Content(WebExtensionPart webExtensionPart1, string snippetID)
         {
-            We.WebExtension webExtension1 = new We.WebExtension() { Id = "{635BF0CD-42CC-4174-B8D2-6D375C9A759E}" };
+            We.WebExtension webExtension1 = new We.WebExtension() { Id = "{61dda122-c69b-49f0-88ed-8989df2a5f71}" };
             webExtension1.AddNamespaceDeclaration("we", "http://schemas.microsoft.com/office/webextensions/webextension/2010/11");
-            We.WebExtensionStoreReference webExtensionStoreReference1 = new We.WebExtensionStoreReference() { Id = "wa104380862", Version = "1.1.0.0", Store = "en-US", StoreType = "OMEX" };
+            We.WebExtensionStoreReference webExtensionStoreReference1 = new We.WebExtensionStoreReference() { Id = "wa200000139", Version = "1.5.0.0", Store = "en-US", StoreType = "OMEX" };
             We.WebExtensionReferenceList webExtensionReferenceList1 = new We.WebExtensionReferenceList();
 
             We.WebExtensionPropertyBag webExtensionPropertyBag1 = new We.WebExtensionPropertyBag();
@@ -69,7 +69,7 @@ namespace Office_OOXML_EmbedAddin
             We.WebExtensionProperty webExtensionProperty2 = new We.WebExtensionProperty() { Name = "SnippetToImport", Value = snippetToImportValue };
             webExtensionPropertyBag1.Append(webExtensionProperty2);
             // CUSTOM MODIFICATION END
-        
+
             We.WebExtensionBindingList webExtensionBindingList1 = new We.WebExtensionBindingList();
 
             We.Snapshot snapshot1 = new We.Snapshot();
